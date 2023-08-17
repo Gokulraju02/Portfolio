@@ -1,0 +1,241 @@
+* {
+   margin: 0px;
+   /* to make it universal */
+   padding: 0px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+   width: 100%;
+   height: 100vh;
+   /* vh-view port height */
+   background-color: white;
+   position: relative;
+   /* ee oru container base ayit venm postion veran e elemt relete ayit venm eni enth vanlum plce avan*/
+
+}
+
+.navbar {
+   display: flex;
+   /* SIDE BY SIDE */
+   justify-content: space-between;
+   /* two create the space between the two childs */
+   width: 85%;
+   margin-left: 5%;
+   align-items: center;
+   /* vertical conetnets ine center align akan */
+}
+
+.listitem {
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+
+}
+
+.links:hover {
+   /* psudo classes- event occuring property change cheyyan ullatha(tag name or class name or id name : psudo name{ property write} */
+   color: rgb(226, 18, 18);
+
+}
+
+.links {
+   text-decoration: none;
+   /* remove underline */
+   color: black;
+   font-weight: bold;
+   /* bold akan */
+}
+
+.title {
+   margin-left: 8%;
+   margin-top: 13%;
+}
+
+.title_h1 {
+   font-size: 40px;
+   margin-bottom: 20px;
+}
+
+.lastname {
+   color: brown;
+}
+
+.download {
+   display: inline-block;
+   /* to make the a tag with a specific width and height */
+   text-decoration: none;
+   background-color: black;
+   color: aliceblue;
+   font-weight: bold;
+   padding: 10px 20px;
+   margin-top: 20px;
+   border-radius: 5px;
+}
+
+.title_img {
+   width: 45%;
+   height: 80%;
+   position: absolute;
+   /* onninte mukil onnayit vern ane */
+   right: 30px;
+   bottom: 0px;
+}
+
+.title_img img {
+   position: absolute;
+   /* first image down second on top of it */
+   height: 100%;
+   left: 50%;
+   /* to hower anything ,we had to chane a value so tfor that add a aleft  */
+   bottom: 0px;
+   transform: translateX(-50%);
+   /* to counter the left make it */
+   transition: bottom 1s, left 2s;
+   /* to make it smooth */
+}
+
+.title_img:hover #shape {
+   bottom: 60px;
+}
+
+.title_img:hover #girl {
+   left: 40%;
+}
+
+
+
+#about {
+   margin: 18% 8% 0Px 8%;
+}
+
+.heading {
+   text-align: center;
+}
+
+.heading h2 {
+   font-size: 30px;
+}
+
+.heading span {
+   font-size: 20px;
+   color: green;
+}
+
+.about_content {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   /* 1fr = 255px */
+   gap: 2rem;
+   /* 1rem = 16px */
+   margin-top: 3rem;
+}
+
+.about_img img {
+   width: 80%;
+   border-radius: 2rem;
+}
+
+.about_details p {
+   font-size: 19px;
+   font-weight: 400;
+   text-align: justify;
+}
+
+.informations {
+   margin-top: 2rem;
+}
+
+.info_box {
+   align-items: center;
+   display: flex;
+   margin-bottom: 1rem;
+}
+
+.info_box span {
+   margin-left: 20px;
+}
+
+#skills{
+   margin: 13% 8% 0px 8%;
+}
+
+.skill_content{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 2rem;
+   margin-top: 2rem;
+}
+
+.skill_img{
+   width: 90%;
+   padding-left: 4rem;
+}
+
+.bar_container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 0px;
+   margin-bottom: 1rem;
+   position: relative;
+}
+
+.base_bar{
+   width: 100%;
+   height: 0.5rem;
+   background-color: black;
+   border-radius: 0.5rem;
+   position: absolute;
+   bottom: 0px;
+}
+
+.html_bar{
+   background-color: chocolate;
+   width: 95%;
+}
+
+.css_bar{
+   background-color: chocolate;
+   width: 88%;
+}
+
+.react_bar{
+   background-color: chocolate;
+   width: 85%;
+}
+
+.js_bar{
+   background-color: chocolate;
+   width: 85%;
+}
+
+.icon_set{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3%;
+}
+
+.icon{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 10px;
+}
+
+.icon i{
+   font-size: 30px;
+   color: black;
+}
+
+.icon:hover{
+   background-image: linear-gradient(to bottom right , yellow ,red);
+}
+
+.icon:hover i{
+   color: white;
+}
